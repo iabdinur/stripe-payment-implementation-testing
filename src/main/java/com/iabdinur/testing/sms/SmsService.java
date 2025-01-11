@@ -1,10 +1,10 @@
 package com.iabdinur.testing.sms;
 
-import com.iabdinur.testing.sms.twilio.TwilioSmsSender;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
-@org.springframework.stereotype.Service
+@Service
 public class SmsService {
 
     private final SmsSender smsSender;

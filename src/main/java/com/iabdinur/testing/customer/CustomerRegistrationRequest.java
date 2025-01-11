@@ -2,11 +2,13 @@ package com.iabdinur.testing.customer;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.validation.Valid;
+
 public class CustomerRegistrationRequest {
     private final Customer customer;
 
     public CustomerRegistrationRequest(
-            @JsonProperty("customer") Customer customer) {
+            @Valid @JsonProperty("customer") Customer customer) {
         this.customer = customer;
     }
 
